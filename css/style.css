@@ -17,8 +17,10 @@ body {
   height: 500px;
   position: relative;
 }
+
 section.hero {
   filter: contrast(130%);
+  color: black;
 }
 
 .layer {
@@ -39,5 +41,18 @@ section.hero {
   background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px), center;
   background-blend-mode: color, difference;
   filter: brightness(4.5) contrast(120%);
+  color: white;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Monserrat", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  letter-spacing: 10px;
+}
