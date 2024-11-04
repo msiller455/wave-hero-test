@@ -56,4 +56,9 @@ h1 {
   font-size: 64px;
   letter-spacing: 10px;
   text-align: center;
+  text-transform: uppercase;
+}
+div.layer > h1::selection {
+  background: white;
+  color:black;
 }
