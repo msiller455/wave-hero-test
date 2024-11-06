@@ -109,4 +109,13 @@ section.hero-container {
     font-size: 1.25rem;
     margin: 1px 0;
   }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .foreground {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  }
+
 }
