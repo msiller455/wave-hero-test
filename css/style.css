@@ -103,10 +103,10 @@ section.hero-container {
   }
 }
 
-@container hero-container (max-width: 480px) {
+@container hero-container (max-width: 760px) {
   h1 {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 2rem;
     margin: 1px 0;
   }
 
@@ -117,5 +117,10 @@ section.hero-container {
   .foreground {
     clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
   }
+}
 
+@container hero-container (max-width: 570px) {
+  h1 {
+    font-size: 1.25rem;
+  }
 }
