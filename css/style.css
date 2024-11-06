@@ -1,81 +1,109 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
+
+:root {
+  --wave-img: url("../assets/img/wave-1.jpg")
+}
 
 * {
   box-sizing: border-box;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
   height: 100vh;
 }
 
+h1 {
+  font-family: "Monument Extended";
+  font-weight: 800;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+section.hero-container {
+  container: hero-container / inline-size;
+}
+
 .hero {
-  background-image: url('../assets/img/wave-1.jpg');
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)),
+    var(--wave-img);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px;
+  height: 50vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
 }
 
-section.hero {
+.background {
   filter: contrast(130%);
-  color: black;
+  justify-content: center;
 
+  >h1 {
+    text-align: left;
+    /* margin: 5% 0 0 5%; */
+    color: black;
+    transform: translateY(-50%);
+
+    /* &:nth-of-type(2) {
+      display: none;
+    } */
+
+    &::selection {
+      color: white;
+      background-color: black;
+    }
+  }
 }
 
-.layer {
+.foreground {
   position: absolute;
   /* Clip path from top left to bottom right */
-  clip-path: polygon(0 0, 100% 100%, 0 100%, 0 0);
+  /* clip-path: polygon(0 0, 100% 100%, 0 100%, 0 0); */
   /* Clip path from bottom left to top right */
-  /* clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%); */
-}
-
-.invert {
-    filter: invert(100%);
-}
-
-.color-chalkboard {
-  background-image: url('../assets//img/wave-1.jpg'), url('../assets//img/wave-1.jpg'), url('../assets//img/wave-1.jpg');
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  background-image: var(--wave-img), var(--wave-img), var(--wave-img);
   background-size: cover;
   background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px), center;
   background-blend-mode: color, difference;
-  filter: brightness(4.5) contrast(120%);
+  filter: brightness(4.5);
   color: white;
-}
+  justify-content: center;
 
-.flex-top-right {
-  display: flex;
-  justify-content: flex-end;
+  >h1 {
+    /* text-align: right; */
+    /* margin: 0 5% 5% 0; */
+    transform: translateY(90%);
 
-  > h1 {
-    text-align: right;
+
+    /* &:nth-of-type(1) {
+      display: none;
+    } */
+
+    &::selection {
+      background: white;
+      color: black;
+    }
   }
 }
 
-.flex-bottom-left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: end;
-
-  > h1 {
-    text-align: left;
+/* Container Queries */
+@container hero-container (max-width: 1800px) {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
   }
-}
-
-h1 {
-  font-family: "Monument Extended";
-  font-weight: 800;
-  font-size: 64px;
-  text-transform: uppercase;
-  width: 50%;
-  margin: 10px;
-}
-
-div.layer > h1::selection {
-  background: white;
-  color:black;
 }

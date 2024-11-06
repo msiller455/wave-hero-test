@@ -1,41 +1,41 @@
 @font-face {
   font-family: "Monument Extended";
-  src: url('../assets/fonts/monument-extended/PPMonumentExtended-Black.otf') format("opentype");
+  src: url("../assets/fonts/monument-extended/PPMonumentExtended-Black.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monument Extended";
-  src: url('../assets/fonts/monument-extended/PPMonumentExtended-BlackItalic.otf') format("opentype");
+  src: url("../assets/fonts/monument-extended/PPMonumentExtended-BlackItalic.otf") format("opentype");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Monument Extended";
-  src: url('../assets/fonts/monument-extended/PPMonumentExtended-Light.otf') format("opentype");
+  src: url("../assets/fonts/monument-extended/PPMonumentExtended-Light.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monument Extended";
-  src: url('../assets/fonts/monument-extended/PPMonumentExtended-LightItalic.otf') format("opentype");
+  src: url("../assets/fonts/monument-extended/PPMonumentExtended-LightItalic.otf") format("opentype");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Monument Extended";
-  src: url('../assets/fonts/monument-extended/PPMonumentExtended-Regular.otf') format("opentype");
+  src: url("../assets/fonts/monument-extended/PPMonumentExtended-Regular.otf") format("opentype");
   font-weight: 450;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Monument Extended";
-  src: url('../assets/fonts/monument-extended/PPMonumentExtended-RegularItalic.otf') format("opentype");
+  src: url("../assets/fonts/monument-extended/PPMonumentExtended-RegularItalic.otf") format("opentype");
   font-weight: 450;
   font-style: italic;
 }
